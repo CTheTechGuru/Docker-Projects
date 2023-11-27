@@ -15,33 +15,52 @@ how to effectively spin up a docker container for the use off accessing a secure
 
 
 <!-- Benefits -->
-## Benefits of SSH connections in containers
-* Improved Security - SSH Establishes a secure and encypted connection between server and host which helps protects the application and data transmitted. 
+
+
+## Benefits of SSH using containers
+* Improved Security - SSH Establishes a secure and encypted connection between server and host which helps protects the application and data transmitted.
+
 * Ease of management - Easily move from between different environments, making it easy to task, deploy, and scale the application. 
+
 * Collaboration - Multiple team members ability to access an application simultaneously via SSH.
+
 * Scalability - Spin up containers on demand when needed and shutdown when not. Optimizes resources and reduces cost due to flexibility.  
+
 * Portability - Ease of use with multiple cloud providers and does not require dependences due to its packaging, not limited to environment specifics.
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
-### Installation
+## Prerequisites
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+First we need to download the docker application from docker desktop. https://www.docker.com/products/docker-desktop/
+
+I will use studio visual code as my IDE along with the docker extension, this will also work via shell on MAC, Linux or windows.
+
+
+
+
+## Docker Container Installation
+#### Container1 
+
+1. In our terminal we first must download the docker image from docker hub.
+    ```sh
+     docker pull ubuntu
+    ```
+3. Now lets verify the docker image was installed. 
+    ```sh
+    docker images
+    ```
+
+    example output
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+    REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+    ubuntu       latest    xxxxxxxxxxx   7 weeks ago   77.8MB
    ```
-3. Install NPM packages
+5. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+6. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
