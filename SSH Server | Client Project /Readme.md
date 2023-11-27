@@ -93,11 +93,12 @@ I will use studio visual code as my IDE along with the docker extension, this wi
 
 10. Edit - Remove comment 
     PermitRootLogin prohibit-password to
+    
     PermitRootLogin yes
 
     Control S to save, then Control X to exit
 
-11. Now lets run the ssh service. 
+12. Now lets run the ssh service. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
