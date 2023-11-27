@@ -202,6 +202,26 @@ docker exec -it container1 bash
 
 5. Now our final step is connecting to our server from the client. So we will log back into container2.
 
+### Connect Container2(Client) to Container1(Server)
+
+    ```sh
+    run docker start container2
+    ```
+To login and execute 
+
+    ```sh
+    run docker exec -it container2 bash 
+    ```
+
+Run 
+
+    ```sh
+    ssh root@(ip-address)
+    ```
+    
+You should be prompted with "enter password". 
+
+Enter password that you created and successfully you've established a SSH connection between to docker images. 
 
 
 <!-- USAGE EXAMPLES -->
