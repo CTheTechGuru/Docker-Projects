@@ -89,13 +89,15 @@ I will use studio visual code as my IDE along with the docker extension, this wi
     ```
     Scroll down the file until you see the following.
    
-   # Authentication:
-   #LoginGraceTime 2m
-   #PermitRootLogin prohibit-password
-   #StrictModes yes
-   #MaxAuthTries 6   
-   #MaxSessions 10
+ ![](https://github.com/CTheTechGuru/Docker-Projects/blob/main/SSH%20Server%20%7C%20Client%20Project%20/Images/d.png?raw=true)
 
+10. Edit - Remove comment 
+    PermitRootLogin prohibit-password to
+    PermitRootLogin yes
+
+    Control S to save, then Control X to exit
+
+11. Now lets run the ssh service. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
