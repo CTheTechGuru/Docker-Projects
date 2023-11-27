@@ -5,10 +5,6 @@ This repository consists of docker projects which demonstrate utilizing containe
 
 
 
-
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
