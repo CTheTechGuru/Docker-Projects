@@ -18,7 +18,7 @@ how to effectively spin up a docker container for the use off accessing a secure
 
 
 ## Benefits of SSH using containers
-* Improved Security - SSH Establishes a secure and encypted connection between server and host which helps protects the application and data transmitted.
+* Improved Security - SSH Establishes a secure and encypted connection between server and hosts which helps secure and protect the application and data transmitted.
 
 * Ease of management - Easily move from between different environments, making it easy to task, deploy, and scale the application. 
 
@@ -39,8 +39,8 @@ I will use studio visual code as my IDE along with the docker extension, this wi
 
 
 
-## Docker Container Installation
-#### Container1 
+## Installation Steps
+### Container1 Installation
 
 1. In our terminal we first must download the docker image from docker hub.
     ```sh
@@ -70,9 +70,8 @@ I will use studio visual code as my IDE along with the docker extension, this wi
     ```sh
    docker run -it –name container1 ubuntu
     ```
-8. You should now be logged in as root in container1.
-
-    This is our SSH server so we will update the container as well as install SSH.
+8. This is our SSH server so we will update the container as well as install SSH.
+    Run the following. 
     ```sh
     apt-get update
     apt-get install openssh-server 
@@ -114,7 +113,97 @@ I will use studio visual code as my IDE along with the docker extension, this wi
      [ ? ]  hwclock.sh
      [ - ]  procps
      [ + ]  ssh
- ```
+     ```
+
+    Now we will create our client container. 
+
+
+### Container2 Installation
+
+
+   
+1. Create a folder/directory named project2 where we will create our first container and change directory to project2.
+    create directory
+      
+     ```sh
+
+     mkdir project2
+
+     ```
+   
+
+     ```sh
+
+       cd project2
+
+     ```
+
+  
+3. Now we will run the following command which will run the container. 
+
+   ```sh
+
+   docker run -it –name container2 ubuntu
+
+   ```
+
+5. This is our SSH client so we will update the container as well as install openssh client.
+    Run the following. 
+```sh
+    
+    apt-get update
+    apt-get install openssh-client
+
+```
+   
+   
+   
+### Setup Root Password on SSH Server
+
+1. To startup the container run 
+```sh        
+    
+docker start container1
+
+```    
+
+
+2. To login and execute run 
+
+```sh
+ 
+docker exec -it container1 bash 
+
+```
+
+3. Now in order for us to connect to the SSHserver we need to configure a password for the root user on our server. 
+
+   Change the password enter 
+
+     ```sh    
+   
+     passwd root
+
+     ```
+
+     Use password to 123 for simplicity sake. 
+
+4. To get the IP for our server to connect remotely ssh we need the IP address. 
+
+    Enter the following command
+
+    ```sh
+
+    docker inspect container1 | grep IPAddress
+
+    ```
+    
+    Output should be similar to 172.17.0.2
+
+5. Now our final step is connecting to our server from the client. So we will log back into container2.
+
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
