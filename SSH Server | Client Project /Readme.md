@@ -98,8 +98,23 @@ I will use studio visual code as my IDE along with the docker extension, this wi
 
     Control S to save, then Control X to exit
 
-12. Now lets run the ssh service. 
-
+13. Now we will start the SSH service.
+    ```sh
+    service ssh start
+    ```
+    
+   
+    Verify service is running  
+     ```sh
+    service –status-all
+    ```
+    Example output
+    ```sh
+     [ - ]  dbus
+     [ ? ]  hwclock.sh
+     [ - ]  procps
+     [ + ]  ssh
+ ```
 <!-- USAGE EXAMPLES -->
 ## Usage
 
