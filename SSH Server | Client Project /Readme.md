@@ -204,19 +204,26 @@ docker exec -it container1 bash
 
 ### Connect Container2(Client) to Container1(Server)
 
+1. Start our Client container.
+   
     ```sh
     run docker start container2
     ```
-To login and execute 
+    
+2. To login execute 
 
     ```sh
+    
     run docker exec -it container2 bash 
+    
     ```
 
-Run 
+3. Run the following command to SSH into server, replace ip-address with the IP you retrieved from the grep command we used earlier.  
 
     ```sh
+    
     ssh root@(ip-address)
+    
     ```
     
 You should be prompted with "enter password". 
