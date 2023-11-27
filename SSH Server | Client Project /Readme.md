@@ -90,12 +90,11 @@ I will use studio visual code as my IDE along with the docker extension, this wi
     Scroll down the file until you see the following.
    ```sh
    # Authentication:
-
-#LoginGraceTime 2m
-#PermitRootLogin prohibit-password
-#StrictModes yes
-#MaxAuthTries 6   
-#MaxSessions 10
+   #LoginGraceTime 2m
+   #PermitRootLogin prohibit-password
+   #StrictModes yes
+   #MaxAuthTries 6   
+   #MaxSessions 10
 ```
 
 <!-- USAGE EXAMPLES -->
