@@ -70,7 +70,23 @@ I will use studio visual code as my IDE along with the docker extension, this wi
     ```sh
    docker run -it –name container1 ubuntu
     ```
+8. You should now be logged in as root in container1.
 
+    This is our SSH server so we will update the container as well as install SSH.
+    ```sh
+    apt-get update
+    apt-get install openssh-server 
+    ```
+9. We will be editing the configuration file of the SSH server for security purposes. This requires an editor. We will be using nano.
+    To install nano run 
+    ```sh
+    apt-get install nano
+    ```
+
+    Open the ssh file 
+    ```sh
+   nano /etc/ssh/sshd_config/
+    ```
 
 
 <!-- USAGE EXAMPLES -->
