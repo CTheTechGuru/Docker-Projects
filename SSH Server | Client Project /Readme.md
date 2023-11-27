@@ -56,16 +56,20 @@ I will use studio visual code as my IDE along with the docker extension, this wi
     REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
     ubuntu       latest    xxxxxxxxxxx   7 weeks ago   77.8MB
    ```
-5. Install NPM packages
+5. Create a folder/directory named project1 where we will create our first container and change directory to project1.
+    create directory
    ```sh
-   npm install
+   mkdir project1
    ```
-6. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   ```sh
+   cd project1
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+7. Now we will run the following command which will run the container. 
+    ```sh
+   docker run -it –name container1 ubuntu
+    ```
 
 
 
