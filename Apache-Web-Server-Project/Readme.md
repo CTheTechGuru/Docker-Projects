@@ -84,7 +84,13 @@ I will use studio visual code as my IDE along with the docker extension, this wi
 
     ```Output example```
 
-    ![]()
+
+   
+![](https://github.com/CTheTechGuru/Docker-Projects/blob/main/Apache-Web-Server-Project/4.png)
+
+
+
+   
 <!-- CONTACT -->
 ## Contact
 
