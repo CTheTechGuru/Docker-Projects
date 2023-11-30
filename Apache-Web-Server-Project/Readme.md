@@ -1,6 +1,7 @@
-![img](https://github.com/CTheTechGuru/Docker-Projects/blob/main/SSH%20Server%20%7C%20Client%20Project%20/Images/maxresdefault.jpg?raw=true)
-<h1 align="center">Apache Web Server Docker Project</h3>
-
+<div align="center">
+    <img src="https://github.com/CTheTechGuru/Docker-Projects/blob/main/Apache-Web-Server-Project/1606047804023.png">
+</div>
+                                   
 
 
 
