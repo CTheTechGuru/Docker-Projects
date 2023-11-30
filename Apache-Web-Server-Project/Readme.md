@@ -48,7 +48,8 @@ I will use studio visual code as my IDE along with the docker extension, this wi
 1. Create new folder for project named ApacheWebServer and cd into folder. 
 
 2. Create a docker file from the File tab.
-   ![]()
+
+![](https://github.com/CTheTechGuru/Docker-Projects/blob/main/Apache-Web-Server-Project/5.png)
 
 2. Go to settings at bottm left and change autosave to onFocusChange to save without losing progress.
 
