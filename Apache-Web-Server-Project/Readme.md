@@ -14,8 +14,8 @@ How does this architecture work?
 * An HTTP request is sent from the users web browser to the apache web server ran in our docker container.
 * The docker container is running on the docker host, which runs the docker engine.
 * The docker engine communicates with the docker API, which is used to manage containers and images. 
-* The Aaache webserver handles incoming http requests and return the appropriate responses. 
-* The apache web server also listens on specific ports. 
+* The Apache webserver handles incoming http requests and return the appropriate responses. 
+* The Apache web server also listens on specific ports. 
 
 
 <!-- Benefits -->
